@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EARNINGS MONEY DAILY</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #000000, #0f2027);
+    color: white;
+}
+
+/* Image */
+.banner img {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/* Title */
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #00ff99;
+}
+
+/* Button */
+.join-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: gold;
+    color: black;
+    font-size: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px gold;
+}
+
+/* Click text */
+.click {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* Timer */
+.timer {
+    font-size: 22px;
+    color: #ff4444;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="banner">
+    <img src="YOUR_IMAGE_LINK_HERE" alt="Banner">
+</div>
+
+<h1>EARNINGS MONEY DAILY 🎉</h1>
+
+<a href="https://t.me/+NbYRlZbIDn5hOTJl" class="join-btn">
+    🚀 JOIN TELEGRAM NOW
+</a>
+
+<div class="click">👇 Click & Start Earning 👇</div>
+
+<div class="timer" id="countdown">00 : 00 : 00 : 05</div>
+
+<div class="footer">
+    Trusted Community | Daily Updates 💸
+</div>
+
+<script>
+let time = 5;
+let countdown = document.getElementById("countdown");
+
+let interval = setInterval(() => {
+    time--;
+    countdown.innerHTML = "00 : 00 : 00 : " + (time < 10 ? "0" + time : time);
+
+    if(time <= 0){
+        clearInterval(interval);
+        window.location.href = "https://t.me/+NbYRlZbIDn5hOTJl";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
